@@ -8,9 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        jakartaSans: "var(--font-plus-jakarta)", // Google font Plus Jakarta Sans
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        customOrange: "#F56E0F", // Custom orange color for text
       },
     },
   },
