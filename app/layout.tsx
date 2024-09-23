@@ -11,7 +11,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "Kulmi Digital",
+  title: "Kulmi Digital Agency",
   description:
     "We're Digital Specialists helping ambitious brands in Africa and globally push boundaries and drive impact.",
   icons: {

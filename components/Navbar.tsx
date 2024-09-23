@@ -16,7 +16,7 @@ const clashDisplay = localFont({
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between items-center py-4 px-8 border-b-[1px] border-customOrange'>
+    <nav className='flex justify-between items-center bg-white py-4 px-8 border-b-[1px] border-[#F56E0F] sticky top-0'>
       {/* Left Side: Logo and Brand */}
       <div className='flex items-center'>
         <Image
