@@ -49,12 +49,12 @@ const AboutMiddle3: React.FC = () => {
     },
   ];
 
-  const handlePrev = () => {
-    setStartIndex(0);
+  const handleNext = () => {
+    setStartIndex((prev) => Math.min(prev + 1, teamMembers.length - 2));
   };
 
-  const handleNext = () => {
-    setStartIndex(2);
+  const handlePrev = () => {
+    setStartIndex((prev) => Math.max(prev - 1, 0));
   };
 
   return (
@@ -72,7 +72,7 @@ const AboutMiddle3: React.FC = () => {
         </p>
       </div>
       <div className='w-full md:w-1/2 relative'>
-        <motion.div className='flex overflow-hidden'>
+        <div className='flex overflow-hidden'>
           <AnimatePresence initial={false}>
             {[0, 1, 2].map((offset) => {
               const index = startIndex + offset;
@@ -82,30 +82,23 @@ const AboutMiddle3: React.FC = () => {
                   key={teamMembers[index].name}
                   initial={{ opacity: 0, x: 100 }}
                   animate={{
-                    opacity: offset === 2 ? 0.5 : 1,
+                    opacity: 1,
                     x: 0,
-                    width: offset === 2 ? "33.333%" : "50%",
+                    width: "40%",
+                    marginRight: offset === 2 ? "-10%" : "5%",
                   }}
                   exit={{ opacity: 0, x: -100 }}
                   transition={{ duration: 0.3 }}
-                  className='px-2'>
+                  style={{
+                    zIndex: 3 - offset,
+                  }}>
                   <TeamCard {...teamMembers[index]} />
                 </motion.div>
               );
             })}
           </AnimatePresence>
-        </motion.div>
-        {startIndex === 0 && (
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={handleNext}
-            className='absolute top-1/2 right-4 transform -translate-y-1/2 bg-[#F56E0F] text-white p-2 rounded-full z-10'>
-            <FaChevronRight />
-          </motion.button>
-        )}
-        {startIndex === 2 && (
+        </div>
+        {startIndex > 0 && (
           <motion.button
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -113,6 +106,16 @@ const AboutMiddle3: React.FC = () => {
             onClick={handlePrev}
             className='absolute top-1/2 left-4 transform -translate-y-1/2 bg-[#F56E0F] text-white p-2 rounded-full z-10'>
             <FaChevronLeft />
+          </motion.button>
+        )}
+        {startIndex < teamMembers.length - 2 && (
+          <motion.button
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={handleNext}
+            className='absolute top-1/2 right-4 transform -translate-y-1/2 bg-[#F56E0F] text-white p-2 rounded-full z-10'>
+            <FaChevronRight />
           </motion.button>
         )}
       </div>
