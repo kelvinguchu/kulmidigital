@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import localFont from "next/font/local";
 
-// Import Clash Display font
 const clashDisplay = localFont({
   src: [
     {
@@ -16,7 +15,6 @@ const clashDisplay = localFont({
   display: "swap",
 });
 
-// Define the type for the props
 interface TeamCardProps {
   name: string;
   title: string;
@@ -25,24 +23,21 @@ interface TeamCardProps {
 
 const TeamCard: React.FC<TeamCardProps> = ({ name, title, imageSrc }) => {
   return (
-    <div className='max-w-[250px] mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-300'>
-      {/* Image with Border Radius */}
-      <div className='w-full'>
+    <div className='w-[240px] bg-white rounded-[20px] overflow-hidden border h-[390px]'>
+      <div className='w-full aspect-[3/4]'>
         <Image
           src={imageSrc}
           alt={name}
-          width={200}
-          height={200}
+          width={300}
+          height={400}
           style={{
-            borderRadius: "20%",
             padding: "10px",
-          }}
-          className='w-full h-auto object-cover'
+            borderRadius: "10%",
+           }}
+          className='w-full h-full object-cover'
         />
       </div>
-
-      {/* Name and Title */} 
-      <div className='p-4 text-left'>
+      <div className='pl-4 pb-8 text-left'>
         <h2 className={`${clashDisplay.className} text-xl font-bold`}>
           {name}
         </h2>
