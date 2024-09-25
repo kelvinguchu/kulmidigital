@@ -107,15 +107,16 @@ const HomeAbout = () => {
                     </div>
                   ))}
                 </div>
-                <div>
+                <div className="mt-4">
                   <Link href='/about'>
-                    <span className='flex flex-row border-b-2 '>
+                    <span
+                      className={`${plusJakartaSans.className} inline-flex items-center border-black border-b-[1px] text-[14px]`}>
                       Learn More
                       <Image
                         src='/icons/up.svg'
                         alt='Arrow Right'
-                        width={16}
-                        height={16}
+                        width={24}
+                        height={24}
                         className='ml-2'
                       />
                     </span>
