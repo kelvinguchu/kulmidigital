@@ -1,4 +1,5 @@
 import Discovery from "@/components/Discovery";
+import FAQs from "@/components/FAQs";
 import HomeAbout from "@/components/HomeAbout";
 import HomeTrust from "@/components/HomeTrust";
 import Services from "@/components/Services";
@@ -12,8 +13,7 @@ export default function Home() {
       <WhyChooseUs />
       <Discovery />
       <HomeTrust />
+      <FAQs />
     </div>
   );
 }
-
-       

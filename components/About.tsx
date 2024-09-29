@@ -3,7 +3,6 @@ import AboutTop from "./AboutTop";
 import AboutMiddle from "./AboutMiddle";
 import AboutMiddle2 from "./AboutMiddle2";
 import AboutMiddle3 from "./AboutMiddle3";
-import AboutBottom from "./AboutBottom";
 
 const About = () => {
   return (
@@ -12,7 +11,6 @@ const About = () => {
       <AboutMiddle />
       <AboutMiddle2 />
       <AboutMiddle3 />
-      <AboutBottom />
     </div>
   );
 };

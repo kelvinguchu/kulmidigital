@@ -15,10 +15,10 @@ const clashDisplay = localFont({
   display: "swap",
 });
 
-const AboutBottom = () => {
+const Footer = () => {
   return (
     <section
-      className={`${clashDisplay.className} flex flex-row justify-between items-center px-12`}>
+      className={`${clashDisplay.className} flex flex-row justify-between items-center px-12 mt-[150px] bottom-0`}>
       <div className='flex flex-col space-y-[150px]'>
         <div>
           <h1 className='text-5xl text-slate-500'>Start</h1>
@@ -32,7 +32,8 @@ const AboutBottom = () => {
           </h1>
         </div>
         <div>
-          <h2>Follow Us</h2>
+          <h2 className="text-2xl">Follow Us</h2>
+          <div></div>
         </div>
       </div>
       <div className="bg-[url('/office_layout.avif')] bg-cover bg-center w-[600px] h-[400px] rounded-3xl"></div>
@@ -40,4 +41,4 @@ const AboutBottom = () => {
   );
 };
 
-export default AboutBottom;
+export default Footer;
