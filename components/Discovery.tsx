@@ -73,7 +73,7 @@ const Discovery = () => {
 
   return (
     <section className='flex flex-row justify-between px-12 mt-[100px]'>
-      <div className="bg-[url('/choose2.png')] bg-contain bg-center w-[48%] h-[500px] rounded-3xl space-x-[50px]"></div>
+      <div className="bg-[url('/images/choose2.png')] bg-contain bg-center w-[48%] h-[500px] rounded-3xl space-x-[50px]"></div>
       <div className='w-[48%] p-6'>
         <div className={`${clashDisplay.className} text-left -mt-8 `}>
           <h1 className='text-[45px] text-[#F56E0F]'>

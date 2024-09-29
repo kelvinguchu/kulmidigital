@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import localFont from "next/font/local";
 import { useState } from "react";
@@ -47,13 +46,32 @@ const AboutTop = () => {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}>
               Download our Profile
-              <Image
-                src={isHovered ? "/next.png" : "/up.png"}
-                alt='Download'
-                width={24}
-                height={24}
-                className='inline-block ml-2 transition-transform duration-300'
-              />
+              {isHovered ? (
+                // Hovered SVG (Next)
+                <svg
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                  className='inline-block ml-2 w-6 h-6'>
+                  <path
+                    d='M6 12H18M18 12L13 7M18 12L13 17'
+                    stroke='black'
+                    strokeWidth='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  />
+                </svg>
+              ) : (
+                // Default SVG (Up)
+                <svg
+                  viewBox='0 0 1024 1024'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='currentColor'
+                  className='inline-block ml-2 w-6 h-6'>
+                  <path d='M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0V256z'></path>
+                  <path d='M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312l544-544z'></path>
+                </svg>
+              )}
             </span>
           </Link>
         </div>
@@ -75,14 +93,14 @@ const AboutTop = () => {
               </h3>
               <div className='flex space-x-4'>
                 {[
-                  { name: "Kenya", flag: "/kenya.png" },
-                  { name: "Somalia", flag: "/somalia.png" },
-                  { name: "Ethiopia", flag: "/ethiopia.png" },
-                  { name: "Uganda", flag: "/uganda.png" },
-                  { name: "Tanzania", flag: "/tanzania.png" },
+                  { name: "Kenya", flag: "/flags/kenya.png" },
+                  { name: "Somalia", flag: "/flags/somalia.png" },
+                  { name: "Ethiopia", flag: "/flags/ethiopia.png" },
+                  { name: "Uganda", flag: "/flags/uganda.png" },
+                  { name: "Tanzania", flag: "/flags/tanzania.png" },
                 ].map((location) => (
                   <div className='flex items-center' key={location.name}>
-                    <Image
+                    <img
                       src={location.flag}
                       alt={location.name}
                       width={32}
@@ -103,11 +121,11 @@ const AboutTop = () => {
               </h3>
               <div className='flex space-x-4'>
                 {[
-                  { name: "Rest of Africa", flag: "/africa.svg" },
-                  { name: "Global", flag: "/global.svg" },
+                  { name: "Rest of Africa", flag: "/icons/africa.svg" },
+                  { name: "Global", flag: "/icons/global.svg" },
                 ].map((location) => (
                   <div className='flex items-center' key={location.name}>
-                    <Image
+                    <img
                       src={location.flag}
                       alt={location.name}
                       width={32}

@@ -65,10 +65,10 @@ const Services: React.FC = () => {
   return (
     <section className='bg-white py-16 px-12'>
       <h1
-        className={`${clashDisplay.className} w-1/2 text-4xl font-bold text-left text-black pl-4 py-12`}>
-        Boost Your Business with our Strategic{" "}
+        className={`${clashDisplay.className} w-[60%] text-[45px] font-bold text-left text-black pl-4 py-12`}>
+        Boost Your Business with our Strategic {" "}
         <span className='text-[#F56E0F]'>Brand</span> &{" "}
-        <span className='text-[#F56E0F]'>Digital</span>{" "} Services
+        <span className='text-[#F56E0F]'>Digital</span> Services
       </h1>
       <div className='max-w-7xl mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>

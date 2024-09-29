@@ -64,11 +64,11 @@ const HomeAbout = () => {
                 </h3>
                 <div className='flex space-x-4'>
                   {[
-                    { name: "Kenya", flag: "/kenya.png" },
-                    { name: "Somalia", flag: "/somalia.png" },
-                    { name: "Ethiopia", flag: "/ethiopia.png" },
-                    { name: "Uganda", flag: "/uganda.png" },
-                    { name: "Tanzania", flag: "/tanzania.png" },
+                    { name: "Kenya", flag: "/flags/kenya.png" },
+                    { name: "Somalia", flag: "/flags/somalia.png" },
+                    { name: "Ethiopia", flag: "/flags/ethiopia.png" },
+                    { name: "Uganda", flag: "/flags/uganda.png" },
+                    { name: "Tanzania", flag: "/flags/tanzania.png" },
                   ].map((location) => (
                     <div className='flex items-center' key={location.name}>
                       <Image
@@ -92,8 +92,8 @@ const HomeAbout = () => {
                 </h3>
                 <div className='flex space-x-4'>
                   {[
-                    { name: "Rest of Africa", flag: "/africa.svg" },
-                    { name: "Global", flag: "/global.svg" },
+                    { name: "Rest of Africa", flag: "/icons/africa.svg" },
+                    { name: "Global", flag: "/icons/global.svg" },
                   ].map((location) => (
                     <div className='flex items-center' key={location.name}>
                       <Image

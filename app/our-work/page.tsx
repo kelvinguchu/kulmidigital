@@ -1,8 +1,11 @@
+import OurWork from '@/components/OurWork'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>our work</div>
+    <div>
+      <OurWork />
+    </div>
   )
 }
 

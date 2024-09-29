@@ -90,7 +90,7 @@ const WhyChooseUs = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[url('/choose.png')] bg-contain bg-center w-[48%] h-[500px] rounded-3xl"></div>
+      <div className="bg-[url('/images/choose.png')] bg-contain bg-center w-[48%] h-[500px] rounded-3xl"></div>
     </section>
   );
 };

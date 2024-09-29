@@ -29,9 +29,9 @@ const clashDisplay_light = localFont({
 const AboutMiddle = () => {
   return (
     <section className='flex flex-row px-10 justify-around'>
-      <div className="bg-[url('/billboard.avif')] bg-cover bg-center-left w-[500px] h-[550px] rounded-3xl"></div>
+      <div className="bg-[url('/images/billboard.avif')] bg-cover bg-center-left w-[500px] h-[550px] rounded-3xl"></div>
       <div>
-        <div className="bg-[url('/insta_one.jpg')] bg-cover bg-center-bottom w-[700px] h-[400px] rounded-3xl"></div>
+        <div className="bg-[url('/images/insta_one.jpg')] bg-cover bg-center-bottom w-[700px] h-[400px] rounded-3xl"></div>
 
         <div
           className={`${clashDisplay_light.className} flex flex-row justify-between mt-6`}>

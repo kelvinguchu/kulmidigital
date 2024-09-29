@@ -1,6 +1,6 @@
-import React from "react";
+'use client';
+import React, { useState } from "react";
 import localFont from "next/font/local";
-import Image from "next/image";
 import {
   Accordion,
   AccordionItem,
@@ -34,6 +34,8 @@ const clashDisplay2 = localFont({
 });
 
 const FAQs = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <section
       className={`${clashDisplay.className} flex flex-col pt-[80px] px-12`}>
@@ -99,15 +101,38 @@ const FAQs = () => {
           <h1 className='text-3xl text-black text-center'>
             More <br /> Questions? <br /> Reach out to <br /> us
           </h1>
-          <button className='text-[18px] text-center text-white bg-[#F56E0F] mx-auto w-[70%] p-4 rounded-[40px]'>
-            Get Started
-            <Image
-              src="/up.png"
-              alt='Download'
-              width={24}
-              height={24}
-              className='inline-block ml-2 transition-transform duration-300'
-            />
+          <button
+            className='text-[18px] text-center text-white bg-[#F56E0F] border border-[#F56E0F] hover:bg-transparent hover:text-white hover:border-white mx-auto w-[70%] p-4 rounded-[40px] flex items-center justify-center space-x-2'
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}>
+            <span>Get Started</span>
+            {/* Toggle SVG based on hover state */}
+            {isHovered ? (
+              // Next icon on hover
+              <svg
+                viewBox='0 0 24 24'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+                className='w-6 h-6'>
+                <path
+                  d='M6 12H18M18 12L13 7M18 12L13 17'
+                  stroke='white'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                />
+              </svg>
+            ) : (
+              // Default up icon
+              <svg
+                viewBox='0 0 1024 1024'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='white'
+                className='w-6 h-6'>
+                <path d='M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0V256z'></path>
+                <path d='M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312l544-544z'></path>
+              </svg>
+            )}
           </button>
         </div>
       </div>
