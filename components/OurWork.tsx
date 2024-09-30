@@ -1,5 +1,6 @@
 import React from "react";
 import localFont from "next/font/local";
+import Projects from "./Projects";
 
 // Import Clash Display Font
 const clashDisplay = localFont({
@@ -30,6 +31,7 @@ const OurWork = () => {
           </h1>
         </div>
       </div>
+      <Projects />
     </section>
   );
 };
