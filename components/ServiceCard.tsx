@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import localFont from "next/font/local";
 import { Plus_Jakarta_Sans } from "next/font/google";
-
+import SlideReveal from "@/components/ui/slidereveal";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -11,7 +11,6 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
 });
 
-// Use Clash Display Font
 const clashDisplay = localFont({
   src: [
     {
@@ -24,9 +23,8 @@ const clashDisplay = localFont({
   display: "swap",
 });
 
-// Reusable ServiceCard Component that only uses custom SVG icons
 interface ServiceCardProps {
-  iconSrc: string; // Path to the SVG icon
+  iconSrc: string;
   title: string;
   description: string;
 }
@@ -37,29 +35,34 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   description,
 }) => {
   return (
-    <div className='flex flex-col text-left p-4 space-y-4'>
-      {/* Render SVG Icon from public/icons folder */}
-      <div className='text-[#F56E0F] mb-2'>
-        <Image
-          src={iconSrc}
-          alt={title}
-          width={50}
-          height={50}
-          style={{ color: "#F56E0F" }}
-        />
+    <SlideReveal direction='up' duration={0.7}>
+      <div className='flex flex-col text-left p-4 sm:p-6 space-y-6'>
+        {" "}
+        {/* Increased spacing between elements */}
+        {/* Icon */}
+        <div className='text-[#F56E0F] mb-4'>
+          <Image
+            src={iconSrc}
+            alt={title}
+            width={60} // Increased size
+            height={60}
+            className='sm:w-70 sm:h-70'
+          />
+        </div>
+        {/* Title */}
+        <h3
+          className={`${clashDisplay.className} text-[24px] sm:text-[26px] font-bold text-black mb-2`} // Increased font size
+        >
+          {title}
+        </h3>
+        {/* Description */}
+        <p
+          className={`${plusJakartaSans.className} text-gray-600 text-[16px] sm:text-[18px] leading-relaxed`} // Added leading-relaxed for better line spacing
+        >
+          {description}
+        </p>
       </div>
-
-      {/* Title */}
-      <h3
-        className={`${clashDisplay.className} text-[22px] font-bold text-black `}>
-        {title}
-      </h3>
-
-      {/* Description */}
-      <p className={`${plusJakartaSans.className} text-gray-600 text-[16px]`}>
-        {description}
-      </p>
-    </div>
+    </SlideReveal>
   );
 };
 
