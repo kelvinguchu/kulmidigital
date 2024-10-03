@@ -52,22 +52,53 @@ const services = [
     iconSrc: "/icons/certificate.svg",
     title: "Display Advertising",
     description:
-      "We design and implement visually appealing display ad campaigns across various online platforms and websites.",
+      "We create eye-catching display ads that capture attention and drive engagement across various online platforms and websites.",
   },
   {
     iconSrc: "/icons/video-play.svg",
     title: "Digital Content Creation",
     description:
-      "We produce high quality media content that matches your distinct brand style and is customized to your business objectives. at scale. ",
+      "We produce high quality media content that matches your distinct brand style and is customized to your business objectives at scale.",
+  },
+  {
+    iconSrc: "/icons/media.svg",
+    title: "Media Planning & Research",
+    description:
+      "We analyze market trends and audience insights to create effective media strategies, ensuring your content reaches the right audience.",
+  },
+  {
+    iconSrc: "/icons/set.svg",
+    title: "Data Driven Audience Segmentation",
+    description:
+      "We utilize advanced analytics to segment your audience effectively, allowing for tailored marketing efforts that enhance engagement.",
+  },
+  {
+    iconSrc: "/icons/tool.svg",
+    title: "Leveraging ML and AI To Deliver Precision Campaigns",
+    description:
+      "We integrate machine learning and artificial intelligence to optimize your campaigns, ensuring precision targeting and improved performance.",
+  },
+  {
+    iconSrc: "/icons/bulb.svg",
+    title: "Optimized Media Plans Based On Campaign Objectives",
+    description:
+      "We develop media plans that align with your specific campaign goals, ensuring efficient use of resources and maximum impact.",
+  },
+  {
+    iconSrc: "/icons/growth.svg",
+    title: "Tracking And Measuring Campaign Performance",
+    description:
+      "We provide comprehensive analytics and reporting to track your campaign performance, allowing for informed adjustments and improvements.",
   },
 ];
+
 
 const Services: React.FC = () => {
   return (
     <section className='bg-white py-8 px-4 sm:py-16 sm:px-6 md:px-12'>
       <SlideReveal direction='left' duration={0.7}>
         <h1
-          className={`${clashDisplay.className} text-[28px] sm:text-[36px] md:text-[45px] font-bold text-left text-black pl-2 sm:pl-4 py-8 sm:py-12`}>
+          className={`${clashDisplay.className} text-[28px] md:w-[60%] sm:text-[36px] md:text-[45px] font-bold text-left text-black pl-2 sm:pl-4 py-8 sm:py-12`}>
           Boost Your Business with our Strategic{" "}
           <span className='text-[#F56E0F]'>Brand</span> &{" "}
           <span className='text-[#F56E0F]'>Digital</span> Services
