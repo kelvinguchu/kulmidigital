@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
@@ -19,6 +19,7 @@ const SlideReveal: React.FC<SlideRevealProps> = ({
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
+  // Animation variants for controlling visibility
   const variants = {
     hidden: {
       opacity: 0,
@@ -44,8 +45,10 @@ const SlideReveal: React.FC<SlideRevealProps> = ({
       variants={variants}
       initial='hidden'
       animate={controls}
-      transition={{ duration, delay, ease: "easeOut" }}>
-      {children}
+      transition={{ duration, delay, ease: "easeOut" }}
+      // No interfering styles, ensuring children manage their own styles
+    >
+      {children} {/* Children manage their own styles */}
     </motion.div>
   );
 };

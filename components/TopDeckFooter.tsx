@@ -114,9 +114,7 @@ const TopDeckFooter = () => {
       </div>
 
       {/* Right Section: Image */}
-      <SlideReveal direction='right' duration={0.7}>
-        <div className="bg-[url('/images/office_layout.avif')] bg-cover bg-center w-full h-[400px] sm:h-[300px] lg:w-[600px] lg:h-[400px] rounded-3xl"></div>
-      </SlideReveal>
+        <div className="bg-[url('/images/office_layout.avif')] bg-cover bg-center w-full mt-4 h-[400px] sm:h-[300px] lg:w-[600px] lg:h-[400px] rounded-3xl"></div>
     </section>
   );
 };
