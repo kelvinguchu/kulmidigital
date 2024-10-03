@@ -48,8 +48,8 @@ const FAQs = () => {
             </h1>
             <h4
               className={`${clashDisplay2.className} text-sm sm:text-lg lg:text-xl mt-4 text-gray-800 w-full sm:w-[80%] lg:w-[60%]`}>
-              We know your time is precious, so we’ve collected answers to some
-              key questions you may have about working with us.
+              We know your time is precious, so we&apos;ve collected answers to
+              some key questions you may have about working with us.
             </h4>
           </div>
 
@@ -62,7 +62,7 @@ const FAQs = () => {
                     How long has Kulmi Digital been in business?
                   </AccordionTrigger>
                   <AccordionContent className='text-gray-700 text-[14px] sm:text-[16px] lg:text-[18px]'>
-                    As an agency, we’ve been delivering our expert digital
+                    As an agency, we&apos;ve been delivering our expert digital
                     marketing service since 2018.
                   </AccordionContent>
                 </AccordionItem>
@@ -71,22 +71,23 @@ const FAQs = () => {
                     What services does Kulmi Digital offer?
                   </AccordionTrigger>
                   <AccordionContent className='text-gray-700 text-[14px] sm:text-[16px] lg:text-[18px]'>
-                    We’re an integrated digital marketing agency. Our services
-                    include SEO, PPC & both Organic + Paid Social Media, Content
-                    Marketing, Digital Strategy, and Data & Analytics. We offer
-                    flexible digital marketing packages for every business need.
+                    We&apos;re an integrated digital marketing agency. Our
+                    services include SEO, PPC & both Organic + Paid Social
+                    Media, Content Marketing, Digital Strategy, and Data &
+                    Analytics. We offer flexible digital marketing packages for
+                    every business need.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value='item-3'>
                   <AccordionTrigger className='text-[#F56E0F] text-left text-[16px] sm:text-[18px] lg:text-[20px] font-medium'>
-                    My business is located outside Kulmi's locale. Does that
-                    matter?
+                    My business is located outside Kulmi&apos;s locale. Does
+                    that matter?
                   </AccordionTrigger>
                   <AccordionContent className='text-gray-700 text-[14px] sm:text-[16px] lg:text-[18px]'>
-                    Where your business is located doesn’t really matter when it
-                    comes to the work that we do. In fact, we work with clients
-                    across Africa and globally. We arrange regular calls and
-                    travel for face-to-face meetings as needed.
+                    Where your business is located doesn&apos;t really matter
+                    when it comes to the work that we do. In fact, we work with
+                    clients across Africa and globally. We arrange regular calls
+                    and travel for face-to-face meetings as needed.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value='item-4'>
@@ -95,9 +96,9 @@ const FAQs = () => {
                   </AccordionTrigger>
                   <AccordionContent className='text-gray-700 text-[14px] sm:text-[16px] lg:text-[18px]'>
                     Getting started is simple. Get in touch via email, phone, or
-                    by filling out a form on our website. We'll then discuss
-                    your requirements and help you with a custom solution
-                    tailored to your needs.
+                    by filling out a form on our website. We&apos;ll then
+                    discuss your requirements and help you with a custom
+                    solution tailored to your needs.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

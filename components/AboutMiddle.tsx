@@ -2,18 +2,6 @@ import React from "react";
 import localFont from "next/font/local";
 import SlideReveal from "@/components/ui/slidereveal";
 
-const clashDisplay = localFont({
-  src: [
-    {
-      path: "../app/fonts/ClashDisplay-Bold.woff",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-clash-display",
-  display: "swap",
-});
-
 const clashDisplay_light = localFont({
   src: [
     {

@@ -32,9 +32,9 @@ const AboutMiddle2 = () => {
           <div className='lg:w-1/2'>
             <h3
               className={`${clashDisplay.className} text-left text-[22px] sm:text-3xl lg:text-4xl font-bold text-black`}>
-              At <span className='text-[#F56E0F]'>Kulmi Digital</span>, we're
-              not just another agency; we're the architects of digital{" "}
-              <span className='text-[#F56E0F]'>success stories</span>.
+              At <span className='text-[#F56E0F]'>Kulmi Digital</span>, we
+              aren&apos;t just another agency; we&apos;re the architects of
+              digital <span className='text-[#F56E0F]'>success stories</span>.
             </h3>
           </div>
 

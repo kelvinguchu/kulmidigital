@@ -39,12 +39,12 @@ const HomeAbout = () => {
           <p
             className={`${plusJakartaSans.className} text-gray-600 text-[18px] sm:text-[18px] lg:text-[20px] leading-relaxed`}>
             At Kulmi Digital, we understand the crucial role that a well-crafted
-            online brand plays in today's digital landscape. With consumers
+            online brand plays in today&apos;s digital landscape. With consumers
             spending more time online than ever before, having a strong digital
             presence is essential for businesses to succeed.
             <br />
             <br />
-            That's where we come in. Our team of skilled professionals is
+            That&apos;s where we come in. Our team of skilled professionals is
             dedicated to helping clients like you maximize their online impact
             through targeted ad campaigns, strategic planning, and creative
             solutions. From social media advertising to search engine marketing,

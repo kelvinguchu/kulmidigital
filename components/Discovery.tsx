@@ -24,17 +24,6 @@ const clashDisplay = localFont({
   display: "swap",
 });
 
-const clashDisplay2 = localFont({
-  src: [
-    {
-      path: "../app/fonts/ClashDisplay-Regular.woff",
-      weight: "500",
-      style: "normal",
-    },
-  ],
-  variable: "--font-clash-display",
-  display: "swap",
-});
 
 const Discovery = () => {
   // Define the MarketService component inside Discovery

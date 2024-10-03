@@ -3,6 +3,7 @@ import Link from "next/link";
 import localFont from "next/font/local";
 import { useState } from "react";
 import SlideReveal from "@/components/ui/slidereveal";
+import Image from "next/image";
 
 const clashDisplay = localFont({
   src: [
@@ -27,7 +28,8 @@ const AboutTop = () => {
           <div className='w-full lg:w-[75%] text-left'>
             <h1
               className={`${clashDisplay.className} text-[28px] sm:text-[40px] font-bold text-black mb-4 sm:mb-6`}>
-              We're <span className='text-[#F56E0F]'>Digital Specialists</span>{" "}
+              We&apos;re{" "}
+              <span className='text-[#F56E0F]'>Digital Specialists</span>{" "}
               helping ambitious brands like yours{" "}
               <span className='text-[#F56E0F]'>push boundaries</span> and{" "}
               <span className='text-[#F56E0F]'>drive impact</span>
@@ -108,7 +110,7 @@ const AboutTop = () => {
                     { name: "Tanzania", flag: "/flags/tanzania.png" },
                   ].map((location) => (
                     <div className='flex items-center' key={location.name}>
-                      <img
+                      <Image
                         src={location.flag}
                         alt={location.name}
                         width={30}
@@ -137,7 +139,7 @@ const AboutTop = () => {
                     { name: "Global", flag: "/icons/global.svg" },
                   ].map((location) => (
                     <div className='flex items-center' key={location.name}>
-                      <img
+                      <Image
                         src={location.flag}
                         alt={location.name}
                         width={30}

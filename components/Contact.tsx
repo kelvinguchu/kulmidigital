@@ -109,8 +109,8 @@ const Contact: React.FC = () => {
         </SlideReveal>
         <p
           className={`mb-6 sm:mb-8 text-base sm:text-lg ${clashDisplay2.className}`}>
-          We're glad you've got this far! We're excited to meet you and hear
-          about your potential project.
+          We&apos;re glad you&apos;ve got this far! We&apos;re excited to meet
+          you and hear about your potential project.
         </p>
         <div className='space-y-4 sm:space-y-6'>
           <SlideReveal direction='left' duration={0.7}>

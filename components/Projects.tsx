@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { projects } from "@/data/projectsData";
 import SlideReveal from "@/components/ui/slidereveal";
+import Image from "next/image";
 
 // Fonts
 const clashDisplay = localFont({
@@ -72,7 +73,7 @@ const Projects = () => {
               <div
                 key={project.id}
                 className='bg-white rounded-xl p-4 sm:p-6 border border-gray-200'>
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
                   className='w-full h-48 sm:h-56 rounded-[20px] object-cover mb-4'
