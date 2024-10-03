@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import localFont from "next/font/local";
+import SlideReveal from "@/components/ui/slidereveal";
 
 // Use Clash Display Font
 const clashDisplay = localFont({
@@ -39,37 +40,49 @@ const WhyChooseUs = () => {
     text: string;
   }) => {
     return (
-      <h3 className='flex items-center text-[18px] text-gray-600 mb-4'>
-        {/* Image (Icon) */}
-        <Image
-          src={iconSrc}
-          alt={altText}
-          width={20}
-          height={20}
-          className='mr-2'
-        />
-        {/* Text */}
-        {text}
-      </h3>
+      <>
+        <SlideReveal direction='up' duration={0.7}>
+          <h3 className='flex items-center text-[16px] sm:text-[18px] text-gray-600 mb-4'>
+            {/* Image (Icon) */}
+            <Image
+              src={iconSrc}
+              alt={altText}
+              width={24} // Bigger icon for mobile
+              height={24}
+              className='mr-2'
+            />
+            {/* Text */}
+            {text}
+          </h3>
+        </SlideReveal>
+      </>
     );
   };
 
   return (
-    <section className='flex flex-row px-12 justify-between mt-[100px]'>
-      <div className='w-[48%] p-6'>
-        <div className={`${clashDisplay.className} text-left`}>
-          <h1 className='text-[45px] mb-6'>So why us?</h1>
-          <h3
-            className={`${clashDisplay2.className} text-gray-600 text-[18px] mb-6`}>
-            We founded Kulmi Digital with a focus on making brands succeed
-            online. We not only work with big, national brands but also small to
-            medium-sized businesses, and we love it!
-          </h3>
-        </div>
-
+    <section className='flex flex-col lg:flex-row px-4 sm:px-6 lg:px-12 justify-between mt-[60px] lg:mt-[100px]'>
+      <div className='w-full lg:w-[48%] p-4 sm:p-6'>
+        <SlideReveal direction='left' duration={0.7}>
+          <div className={`${clashDisplay.className} text-left`}>
+            <h1 className='text-[28px] sm:text-[36px] lg:text-[45px] mb-4 sm:mb-6'>
+              So why us?
+            </h1>
+            <h3
+              className={`${clashDisplay2.className} text-gray-600 text-[16px] sm:text-[18px] mb-4 sm:mb-6`}>
+              We founded Kulmi Digital with a focus on making brands succeed
+              online. We not only work with big, national brands but also small
+              to medium-sized businesses, and we love it!
+            </h3>
+          </div>
+        </SlideReveal>
         <div className={`${clashDisplay.className}`}>
-                  <h2 className='text-2xl mb-4 text-[#F56E0F]'>Our promise</h2>
-                  <div className="border-b border-gray-200 w-[90%] mb-4"></div>
+          <SlideReveal direction='left' duration={0.7}>
+            <h2 className='text-xl sm:text-2xl mb-4 text-[#F56E0F]'>
+              Our promise
+            </h2>
+          </SlideReveal>
+          <div className='border-b border-gray-200 w-full sm:w-[90%] mb-4'></div>
+
           <div className={`${clashDisplay2.className} space-y-3`}>
             {/* Reusable H3WithIcon Component Instances */}
             <H3WithIcon
@@ -90,7 +103,9 @@ const WhyChooseUs = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[url('/images/choose.png')] bg-contain bg-center w-[48%] h-[500px] rounded-3xl"></div>
+
+      {/* Image on the right side */}
+      <div className="w-full lg:w-[48%] h-[300px] sm:h-[400px] lg:h-[500px] bg-[url('/images/choose.png')] bg-contain bg-center rounded-3xl mb-8 lg:mb-0"></div>
     </section>
   );
 };

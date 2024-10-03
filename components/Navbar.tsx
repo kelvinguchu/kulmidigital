@@ -26,7 +26,7 @@ const clashDisplay = localFont({
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between items-center z-50 bg-white md:pt-6 md:pb-[22px] md:px-[76px] px-4 py-4 border-b-[1px] border-[#F56E0F] sticky top-0'>
+    <nav className='flex justify-between items-center z-50 bg-white md:pt-6 md:pb-[22px] md:px-[76px] px-4 py-3 border-b-[1px] border-[#F56E0F] sticky top-0'>
       {/* Left Side: Logo and Brand */}
       <div className='flex items-center'>
         <Image
@@ -60,12 +60,12 @@ const Navbar = () => {
               <Menu className='w-8 h-8' />
             </button>
           </SheetTrigger>
-          <SheetContent side='top' className='bg-white px-6 py-4'>
+          <SheetContent side='top' className='bg-white px-6 py-4 border-b-[1px] border-[#F56E0F]'>
             {/* Logo and Flags */}
             <div className='flex justify-between items-center mb-6'>
               {/* Left Side: Logo */}
               <div className='flex items-center'>
-                <Image src='/logo.svg' alt='Logo' width={50} height={50} />
+                <Image src='/logo.svg' alt='Logo' width={40} height={40} />
               </div>
 
               {/* Flags */}
@@ -73,32 +73,32 @@ const Navbar = () => {
                 <Image
                   src='/flags/kenya.png'
                   alt='Kenya'
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={30}
                 />
                 <Image
                   src='/flags/somalia.png'
                   alt='Somalia'
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={30}
                 />
                 <Image
                   src='/flags/ethiopia.png'
                   alt='Ethiopia'
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={30}
                 />
                 <Image
                   src='/flags/tanzania.png'
                   alt='Tanzania'
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={30}
                 />
                 <Image
                   src='/flags/uganda.png'
                   alt='Uganda'
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={30}
                 />
               </div>
             </div>

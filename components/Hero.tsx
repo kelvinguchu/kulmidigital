@@ -25,7 +25,7 @@ const Hero = () => {
         {/* Glassy Text Section */}
         <div className='relative z-10 bg-white/10 backdrop-blur-xl border rounded-[20px] px-[20px] py-[20px] w-[90%] mt-[50px] ml-4 md:w-[75%] md:py-[40px] md:mt-[100px] md:ml-8 lg:w-[55%] lg:mt-[150px] lg:ml-16 xl:w-[45%]'>
           <h1
-            className={`text-[32px] font-bold text-white mb-4 sm:text-[40px] lg:text-[50px] ${clashDisplay.className}`}>
+            className={`text-[28px] font-bold text-white mb-4 sm:text-[40px] lg:text-[50px] ${clashDisplay.className}`}>
             We’re a digital agency <br /> with a{" "}
             <span className='text-[#FF8730]'>strategic focus</span>
           </h1>

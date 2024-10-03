@@ -27,38 +27,36 @@ const clashDisplay = localFont({
 // Footer Component
 const Footer = () => {
   return (
-    <section className='flex flex-col px-12 mt-[150px] bottom-0'>
+    <section className='flex flex-col px-4 py-8 sm:px-12 mt-[50px] sm:mt-[150px]'>
       {/* Top Section with Footer Content */}
       <div>
         <TopDeckFooter />
       </div>
 
       {/* Bottom Footer Section */}
-      <div className='flex justify-between items-center py-6 border-t border-gray-200 mt-8 w-full'>
+      <div className='flex flex-col items-center space-y-4 py-6 border-t border-gray-200 mt-8 w-full sm:flex-row sm:justify-between sm:space-y-0'>
         {/* Left Section: Logo and Links */}
-        <div className='flex items-center space-x-6'>
+        <div className='flex items-center space-x-4'>
           <Image src='/logo.svg' alt='Logo' width={26} height={26} />
           <span
-            className={`${clashDisplay.className} text-black text-[26px] font-medium`}>
+            className={`${clashDisplay.className} text-black text-[20px] sm:text-[26px] font-medium`}>
             Kulmi Digital
           </span>
         </div>
 
         {/* Middle Section: Navigation Links */}
         <div
-          className={`${plusJakartaSans.className} flex space-x-6 text-[15px] text-gray-700`}>
+          className={`${plusJakartaSans.className} flex flex-wrap justify-center space-x-4 text-[14px] sm:text-[15px] text-gray-700`}>
           <Link href='/'>Home</Link>
           <span>|</span>
           <Link href='/about'>About</Link>
           <span>|</span>
           <Link href='/our-work'>Our Work</Link>
-          <span>|</span>
-          <Link href='/contact'>Contact</Link>
         </div>
 
         {/* Right Section: Copyright */}
         <div
-          className={`${plusJakartaSans.className} text-gray-700 text-[14px]`}>
+          className={`${plusJakartaSans.className} text-center text-gray-700 text-[12px] sm:text-[14px]`}>
           Copyright © 2024 - All Right Reserved
         </div>
       </div>
