@@ -28,20 +28,22 @@ const Navbar = () => {
   return (
     <nav className='flex justify-between items-center z-50 bg-white md:pt-6 md:pb-[22px] md:px-[76px] px-4 py-3 border-b-[1px] border-[#F56E0F] sticky top-0'>
       {/* Left Side: Logo and Brand */}
-      <div className='flex items-center'>
-        <Image
-          src='/logo.svg'
-          alt='Logo'
-          width={35}
-          height={35}
-          className='mr-2 w-[35px] h-[35px]'
-        />
-        <span
-          className={`${clashDisplay.className} text-black text-[26px] sm:text-[30px] md:text-[32px] lg:text-[26px]`}
-          style={{ fontWeight: 500 }}>
-          Kulmi Digital
-        </span>
-      </div>
+      <Link href='/'>
+        <div className='flex items-center'>
+          <Image
+            src='/logo.svg'
+            alt='Logo'
+            width={35}
+            height={35}
+            className='mr-2 w-[35px] h-[35px]'
+          />
+          <span
+            className={`${clashDisplay.className} text-black text-[26px] sm:text-[30px] md:text-[32px] lg:text-[26px]`}
+            style={{ fontWeight: 500 }}>
+            Kulmi Digital
+          </span>
+        </div>
+      </Link>
 
       {/* Right Side: Desktop Links */}
       <div
@@ -60,13 +62,17 @@ const Navbar = () => {
               <Menu className='w-8 h-8' />
             </button>
           </SheetTrigger>
-          <SheetContent side='top' className='bg-white px-6 py-4 border-b-[1px] border-[#F56E0F]'>
+          <SheetContent
+            side='top'
+            className='bg-white px-6 py-4 border-b-[1px] border-[#F56E0F]'>
             {/* Logo and Flags */}
             <div className='flex justify-between items-center mb-6'>
               {/* Left Side: Logo */}
-              <div className='flex items-center'>
-                <Image src='/logo.svg' alt='Logo' width={40} height={40} />
-              </div>
+              <Link href='/'>
+                <div className='flex items-center'>
+                  <Image src='/logo.svg' alt='Logo' width={40} height={40} />
+                </div>
+              </Link>
 
               {/* Flags */}
               <div className='flex space-x-6 mr-12'>

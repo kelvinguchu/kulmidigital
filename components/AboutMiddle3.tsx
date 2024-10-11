@@ -7,6 +7,7 @@ import localFont from "next/font/local";
 import TeamCard from "./TeamCard";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import SlideReveal from "@/components/ui/slidereveal";
+import Link from "next/link";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -110,20 +111,22 @@ const AboutMiddle3: React.FC = () => {
 
           <SlideReveal direction='up' duration={0.7}>
             <div>
-              <button
-                className={`${plusJakartaSans.className} inline-flex items-center px-6 py-4 border border-black text-black rounded-full hover:bg-white hover:text-[#F56E0F] hover:border-[#F56E0F] transition-colors duration-200`}>
-                See full team
-                <svg
-                  className='w-4 h-4 ml-2'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='currentColor'
-                  strokeWidth='2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'>
-                  <path d='M5 12h14M12 5l7 7-7 7' />
-                </svg>
-              </button>
+              <Link href='/team'>
+                <button
+                  className={`${plusJakartaSans.className} inline-flex items-center px-6 py-4 border border-black text-black rounded-full hover:bg-white hover:text-[#F56E0F] hover:border-[#F56E0F] transition-colors duration-200`}>
+                  See full team
+                  <svg
+                    className='w-4 h-4 ml-2'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'>
+                    <path d='M5 12h14M12 5l7 7-7 7' />
+                  </svg>
+                </button>
+              </Link>
             </div>
           </SlideReveal>
         </div>

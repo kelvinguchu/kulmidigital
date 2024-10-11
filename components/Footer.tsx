@@ -36,13 +36,15 @@ const Footer = () => {
       {/* Bottom Footer Section */}
       <div className='flex flex-col items-center space-y-4 py-6 border-t border-gray-200 mt-8 w-full sm:flex-row sm:justify-between sm:space-y-0'>
         {/* Left Section: Logo and Links */}
-        <div className='flex items-center space-x-4'>
-          <Image src='/logo.svg' alt='Logo' width={26} height={26} />
-          <span
-            className={`${clashDisplay.className} text-black text-[20px] sm:text-[26px] font-medium`}>
-            Kulmi Digital
-          </span>
-        </div>
+        <Link href='/'>
+          <div className='flex items-center space-x-4'>
+            <Image src='/logo.svg' alt='Logo' width={26} height={26} />
+            <span
+              className={`${clashDisplay.className} text-black text-[20px] sm:text-[26px] font-medium`}>
+              Kulmi Digital
+            </span>
+          </div>
+        </Link>
 
         {/* Middle Section: Navigation Links */}
         <div

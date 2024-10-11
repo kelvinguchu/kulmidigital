@@ -32,14 +32,6 @@ export const projects: ProjectData[] = [
     image: "/images/case_energizer.webp",
   },
   {
-    id: 4,
-    category: "Digital Media",
-    title: "LILARCARE Photography",
-    description:
-      "Lilacare home based care is supportive care provided in the home which is often more cost-effective. It is provided by licensed healthcare professionals who provide medical care including rehabilitative assistance.",
-    image: "/images/case_lilacare.avif",
-  },
-  {
     id: 5,
     category: "Digital Media",
     title: "Omaar Maketplace Photography",

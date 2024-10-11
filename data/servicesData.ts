@@ -1,74 +1,62 @@
 export const services = [
   {
     iconSrc: "/icons/flowchart.svg",
-    title: "Digital PR & Content",
+    title: "Performance Marketing",
     description:
-      "We streamline your business processes with innovative implementation of digital strategies. Stay ahead with automation and data-driven insights.",
+      "Data & Research, Strategic Alignment, Organic Performance, and Cross-Channel Reporting to boost digital strategies effectively.",
   },
   {
     iconSrc: "/icons/rocket.svg",
-    title: "Branding and Brand Development",
+    title: "Social Media Management",
     description:
-      "We help you maintain a unified voice across channels, reinforce your brand identity and resonate with your audience with intelligent creative expression.",
+      "Comprehensive services including Social Campaigns Audit, Reporting & Analysis, Community Management, and Social Campaign Remarketing.",
   },
   {
     iconSrc: "/icons/flag.svg",
-    title: "Social Media Management & Advertising",
+    title: "Content Marketing",
     description:
-      "We create and manage targeted advertising campaigns on popular social media platforms such as Facebook, Instagram, Twitter, and LinkedIn.",
+      "We create impactful content such as Blog Posts, Newsletters, Case Studies, Infographics, and Digital Media Content like webinars and podcasts.",
   },
   {
     iconSrc: "/icons/line-up.svg",
-    title: "Search Engine Marketing",
+    title: "Search Engine Optimization (SEO)",
     description:
-      "Our SEM services include pay-per-click (PPC) advertising on search engines like Google and Bing, as well as search engine optimization.",
-  },
-  {
-    iconSrc: "/icons/mail-open.svg",
-    title: "Email Marketing",
-    description:
-      "Our email marketing services involve crafting compelling email campaigns to nurture leads and engage existing customers.",
+      "Providing Local SEO, Link Building, SEO Audits, Technical SEO, and Keyword Tracking to enhance search visibility.",
   },
   {
     iconSrc: "/icons/certificate.svg",
-    title: "Display Advertising",
+    title: "Creative (Brand + Design)",
     description:
-      "We create eye-catching display ads that capture attention and drive engagement across various online platforms and websites.",
+      "Brand Audits, Brand Naming, Strategy, Concept Design & Development, and Brand Campaigns that resonate with audiences.",
   },
   {
-    iconSrc: "/icons/video-play.svg",
-    title: "Digital Content Creation",
+    iconSrc: "/icons/rocket.svg",
+    title: "Digital Advertising (PPC & SEM)",
     description:
-      "We produce high-quality media content that matches your distinct brand style and is customized to your business objectives at scale.",
+      "Ads across platforms including Google Search Ads, YouTube, LinkedIn, META, and more to drive traffic and conversions.",
   },
   {
     iconSrc: "/icons/media.svg",
-    title: "Media Planning & Research",
+    title: "Influencer Marketing",
     description:
-      "We analyze market trends and audience insights to create effective media strategies, ensuring your content reaches the right audience.",
+      "Campaign management, influencer strategy, relationship management, contracting, and in-depth reporting and analysis for brand amplification.",
   },
   {
     iconSrc: "/icons/set.svg",
-    title: "Data Driven Audience Segmentation",
+    title: "Programmatic Ads",
     description:
-      "We utilize advanced analytics to segment your audience effectively, allowing for tailored marketing efforts that enhance engagement.",
+      "Delivering targeted programmatic ads to reach the right audience through data-driven strategies and automation.",
   },
   {
-    iconSrc: "/icons/tool.svg",
-    title: "Leveraging ML and AI To Deliver Precision Campaigns",
+    iconSrc: "/icons/retail.svg",
+    title: "Retail Media",
     description:
-      "We integrate machine learning and artificial intelligence to optimize your campaigns, ensuring precision targeting and improved performance.",
+      "Maximizing your brand’s visibility with advertising across retail media networks, ensuring you reach in-market shoppers.",
   },
   {
-    iconSrc: "/icons/bulb.svg",
-    title: "Optimized Media Plans Based On Campaign Objectives",
+    iconSrc: "/icons/audience.svg",
+    title: "Audience Monitoring",
     description:
-      "We develop media plans that align with your specific campaign goals, ensuring efficient use of resources and maximum impact.",
-  },
-  {
-    iconSrc: "/icons/growth.svg",
-    title: "Tracking And Measuring Campaign Performance",
-    description:
-      "We provide comprehensive analytics and reporting to track your campaign performance, allowing for informed adjustments and improvements.",
+      "Tracking and analyzing audience behavior to provide insights and optimize campaigns for higher engagement.",
   },
 ];

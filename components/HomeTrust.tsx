@@ -18,18 +18,27 @@ const clashDisplay = localFont({
 });
 
 const logos = [
-  "tawakal.png",
   "energizer.png",
+  "bigben.png",
+  "celly.png",
+  "dentsu.png",
+  "dtb.png",
+  "glovo.png",
+  "im.png",
+  "ipay.svg",
+  "naivas.png",
+  "rubis.webp",
+  "upfield.png",
+  "visionplus.png",
+  "sombank.png",
+  "kcb.png",
+  "eyelink.png",
   "lilacare.png",
   "haier.png",
   "omarmp.png",
-  "lg.png",
   "bshcargo.png",
-  "sombank.png",
   "banana.png",
   "tcl.png",
-  "kcb.png",
-  "eyelink.png",
 ];
 
 const HomeTrust: React.FC = () => {
